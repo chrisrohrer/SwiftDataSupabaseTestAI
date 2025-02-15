@@ -2,7 +2,7 @@ import Foundation
 import SwiftData
 
 @Model
-class Category: Codable {
+class Category {
     var id: UUID
     var name: String
     @Relationship(deleteRule: .cascade, inverse: \Book.category) var books: [Book] = []
@@ -11,21 +11,15 @@ class Category: Codable {
         self.id = id
         self.name = name
     }
-
-    // MARK: - Codable
-    enum CodingKeys: String, CodingKey {
-        case id, name
+    
+    convenience init(fromCodable category: CategoryCodable) {
+        self.init(id: category.id, name: category.name)
     }
 
-    required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        id = try container.decode(UUID.self, forKey: .id)
-        name = try container.decode(String.self, forKey: .name)
-    }
+}
 
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(id, forKey: .id)
-        try container.encode(name, forKey: .name)
-    }
+
+struct CategoryCodable: Codable {
+    var id: UUID
+    var name: String
 }

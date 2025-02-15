@@ -2,12 +2,19 @@ import Foundation
 import SwiftData
 
 @Model
-class Author: Codable {
+class Author {
     var id: UUID
     var name: String
     var countryID: UUID?  // Foreign key for Supabase
     var country: Country?  // Direct SwiftData relation
     @Relationship(deleteRule: .cascade, inverse: \Book.author) var books: [Book] = []
+
+    init(id: UUID = UUID(), name: String, country: Country?) {
+        self.id = id
+        self.name = name
+        self.country = country
+        self.countryID = country?.id
+    }
 
     init(id: UUID = UUID(), name: String, countryID: UUID?) {
         self.id = id
@@ -15,30 +22,32 @@ class Author: Codable {
         self.countryID = countryID
     }
 
-    // MARK: - Codable
-    enum CodingKeys: String, CodingKey {
-        case id, name, countryID
+    convenience init(fromCodable author: AuthorCodable) {
+        self.init(id: author.id, name: author.name, countryID: author.countryID)
     }
-
-    required init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        id = try container.decode(UUID.self, forKey: .id)
-        name = try container.decode(String.self, forKey: .name)
-        countryID = try container.decodeIfPresent(UUID.self, forKey: .countryID)
-
-        // Resolve related Country
-        if let countryID = countryID, let context = ModelContextManager.shared.modelContext {
+    
+    
+    /// Resolve relationships manually after decoding
+    func resolveRelationships(using context: ModelContext) {
+        if let countryID = countryID {
             let fetchDescriptor = FetchDescriptor<Country>(predicate: #Predicate { $0.id == countryID })
             if let fetchedCountry = try? context.fetch(fetchDescriptor).first {
-                country = fetchedCountry
+                self.country = fetchedCountry
             }
         }
     }
+}
 
-    func encode(to encoder: Encoder) throws {
-        var container = encoder.container(keyedBy: CodingKeys.self)
-        try container.encode(id, forKey: .id)
-        try container.encode(name, forKey: .name)
-        try container.encodeIfPresent(country?.id, forKey: .countryID)
+
+
+struct AuthorCodable: Codable {
+    let id: UUID
+    let name: String
+    let countryID: UUID?
+
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case countryID = "country_id"
     }
 }

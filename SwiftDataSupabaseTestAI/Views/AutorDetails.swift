@@ -12,12 +12,22 @@ struct AutorDetails: View {
     
     @Bindable var autor: Author
     
+    @Query(sort: \Country.name)
+    private var countries: [Country]
+
     var body: some View {
         
         Form {
             
             TextField("Name", text: $autor.name)
             
+            Picker("Land", selection: $autor.country) {
+                Text("kein Land").tag(nil as Country?)
+                ForEach(countries, id: \.self) { land in
+                    Text(land.name).tag(land as Country?)
+                }
+            }
+
             Section("Bücher") {
                 List(autor.books) { buch in
                     VStack(alignment: .leading) {
@@ -29,6 +39,7 @@ struct AutorDetails: View {
             }
         }
         .navigationTitle(autor.name)
+        .padding()
     }
 }
 

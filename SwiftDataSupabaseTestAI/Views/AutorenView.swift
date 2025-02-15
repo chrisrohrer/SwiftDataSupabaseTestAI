@@ -55,6 +55,7 @@ struct AutorenView: View {
             VStack(alignment: .leading) {
                 Text(autor.name)
                     .font(.headline)
+                Text(autor.country?.name ?? "no country")
             }
             .badge(autor.books.count)
     }

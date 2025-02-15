@@ -24,6 +24,9 @@ struct ContentView: View {
         }
 
         .task {
+            // Perform automatic sync when the view appears
+            let syncManager = SupabaseSyncManager(context: modelContext)
+            await syncManager.syncAllData()
         }
     }
 }

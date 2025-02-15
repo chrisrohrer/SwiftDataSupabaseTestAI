@@ -20,7 +20,7 @@ struct SwiftDataSupabaseTestAIApp: App {
             AuthView()
                 .onAppear {
                     // Save the ModelContext globally
-                    ModelContextManager.shared.setContext(modelContainer.mainContext)
+//                    ModelContextManager.shared.setContext(modelContainer.mainContext)
                 }
         }
         .modelContainer(modelContainer)
@@ -31,13 +31,14 @@ struct SwiftDataSupabaseTestAIApp: App {
 
 
 
-class ModelContextManager {
-    static let shared = ModelContextManager()
-    var modelContext: ModelContext?
-
-    private init() {}
-
-    func setContext(_ context: ModelContext) {
-        self.modelContext = context
-    }
-}
+//class ModelContextManager {
+//    static let shared = ModelContextManager()
+//    var modelContext: ModelContext?
+//
+//    private init() {}
+//
+//    func setContext(_ context: ModelContext) {
+//        self.modelContext = context
+//        print("Shared context:", context.debugDescription)
+//    }
+//}

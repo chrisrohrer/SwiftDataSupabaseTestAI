@@ -56,6 +56,8 @@ struct BuecherView: View {
                 Text(buch.title)
                     .font(.headline)
                 Text(buch.author?.name ?? "unbekannt")
+                Text(buch.category?.name ?? "keine Kategorie")
+                    .foregroundStyle(.secondary)
             }
     }
 
