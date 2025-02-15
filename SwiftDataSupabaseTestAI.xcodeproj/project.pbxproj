@@ -6,23 +6,69 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C6AE3E092D60E80100E8B612 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6AE3E022D60E80100E8B612 /* Preview Assets.xcassets */; };
+		C6AE3E0A2D60E80100E8B612 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6AE3E042D60E80100E8B612 /* Assets.xcassets */; };
+		C6AE3E0C2D60E80100E8B612 /* SwiftDataSupabaseTestAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE3E072D60E80100E8B612 /* SwiftDataSupabaseTestAIApp.swift */; };
+		C6AE3E0F2D60E82000E8B612 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE3E0E2D60E82000E8B612 /* Author.swift */; };
+		C6AE3E122D60EC9D00E8B612 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE3E112D60EC9D00E8B612 /* Secrets.swift */; };
+		C6AE3E152D60ECE000E8B612 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = C6AE3E142D60ECE000E8B612 /* Auth */; };
+		C6AE3E172D60ECE000E8B612 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = C6AE3E162D60ECE000E8B612 /* Functions */; };
+		C6AE3E192D60ECE000E8B612 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = C6AE3E182D60ECE000E8B612 /* PostgREST */; };
+		C6AE3E1B2D60ECE000E8B612 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = C6AE3E1A2D60ECE000E8B612 /* Realtime */; };
+		C6AE3E1D2D60ECE000E8B612 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = C6AE3E1C2D60ECE000E8B612 /* Storage */; };
+		C6AE3E202D60ED1400E8B612 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = C6AE3E1F2D60ED1400E8B612 /* Supabase */; };
+		C6AE3E272D60EEFC00E8B612 /* BuecherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE3E232D60EEFC00E8B612 /* BuecherView.swift */; };
+		C6AE3E282D60EEFC00E8B612 /* AutorDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE3E242D60EEFC00E8B612 /* AutorDetails.swift */; };
+		C6AE3E292D60EEFC00E8B612 /* BuchDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE3E252D60EEFC00E8B612 /* BuchDetails.swift */; };
+		C6AE3E2A2D60EEFC00E8B612 /* AutorenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE3E222D60EEFC00E8B612 /* AutorenView.swift */; };
+		C6AE3E2B2D60EEFC00E8B612 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE3E212D60EEFC00E8B612 /* ContentView.swift */; };
+		C6AE3E2D2D60EF6B00E8B612 /* SupabaseSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE3E2C2D60EF6B00E8B612 /* SupabaseSyncManager.swift */; };
+		C6AE3E2F2D60F08600E8B612 /* AuthVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE3E2E2D60F08600E8B612 /* AuthVM.swift */; };
+		C6AE3E312D60F0E100E8B612 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE3E302D60F0E100E8B612 /* AuthView.swift */; };
+		C6AE3E332D60F58500E8B612 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE3E322D60F58500E8B612 /* Book.swift */; };
+		C6AE3E352D60F58900E8B612 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE3E342D60F58900E8B612 /* Country.swift */; };
+		C6AE3E372D60F58E00E8B612 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE3E362D60F58E00E8B612 /* Category.swift */; };
+		C6AE3E3D2D60F64700E8B612 /* NewAutorSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE3E382D60F64700E8B612 /* NewAutorSheet.swift */; };
+		C6AE3E3E2D60F64700E8B612 /* NewBuchSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE3E392D60F64700E8B612 /* NewBuchSheet.swift */; };
+		C6AE3E3F2D60F64700E8B612 /* NewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AE3E3B2D60F64700E8B612 /* NewSheet.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		C6AE3DF02D60E6D300E8B612 /* SwiftDataSupabaseTestAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataSupabaseTestAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6AE3E022D60E80100E8B612 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C6AE3E042D60E80100E8B612 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6AE3E062D60E80100E8B612 /* SwiftDataSupabaseTestAI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftDataSupabaseTestAI.entitlements; sourceTree = "<group>"; };
+		C6AE3E072D60E80100E8B612 /* SwiftDataSupabaseTestAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataSupabaseTestAIApp.swift; sourceTree = "<group>"; };
+		C6AE3E0E2D60E82000E8B612 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		C6AE3E112D60EC9D00E8B612 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		C6AE3E212D60EEFC00E8B612 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C6AE3E222D60EEFC00E8B612 /* AutorenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorenView.swift; sourceTree = "<group>"; };
+		C6AE3E232D60EEFC00E8B612 /* BuecherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuecherView.swift; sourceTree = "<group>"; };
+		C6AE3E242D60EEFC00E8B612 /* AutorDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorDetails.swift; sourceTree = "<group>"; };
+		C6AE3E252D60EEFC00E8B612 /* BuchDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuchDetails.swift; sourceTree = "<group>"; };
+		C6AE3E2C2D60EF6B00E8B612 /* SupabaseSyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseSyncManager.swift; sourceTree = "<group>"; };
+		C6AE3E2E2D60F08600E8B612 /* AuthVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVM.swift; sourceTree = "<group>"; };
+		C6AE3E302D60F0E100E8B612 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		C6AE3E322D60F58500E8B612 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		C6AE3E342D60F58900E8B612 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		C6AE3E362D60F58E00E8B612 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		C6AE3E382D60F64700E8B612 /* NewAutorSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAutorSheet.swift; sourceTree = "<group>"; };
+		C6AE3E392D60F64700E8B612 /* NewBuchSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBuchSheet.swift; sourceTree = "<group>"; };
+		C6AE3E3B2D60F64700E8B612 /* NewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		C6AE3DF22D60E6D300E8B612 /* SwiftDataSupabaseTestAI */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftDataSupabaseTestAI;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C6AE3DED2D60E6D300E8B612 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6AE3E192D60ECE000E8B612 /* PostgREST in Frameworks */,
+				C6AE3E172D60ECE000E8B612 /* Functions in Frameworks */,
+				C6AE3E202D60ED1400E8B612 /* Supabase in Frameworks */,
+				C6AE3E152D60ECE000E8B612 /* Auth in Frameworks */,
+				C6AE3E1D2D60ECE000E8B612 /* Storage in Frameworks */,
+				C6AE3E1B2D60ECE000E8B612 /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +78,8 @@
 		C6AE3DE72D60E6D300E8B612 = {
 			isa = PBXGroup;
 			children = (
-				C6AE3DF22D60E6D300E8B612 /* SwiftDataSupabaseTestAI */,
+				C6AE3E082D60E80100E8B612 /* SwiftDataSupabaseTestAI */,
+				C6AE3E1E2D60ED1400E8B612 /* Frameworks */,
 				C6AE3DF12D60E6D300E8B612 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +90,88 @@
 				C6AE3DF02D60E6D300E8B612 /* SwiftDataSupabaseTestAI.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C6AE3E032D60E80100E8B612 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C6AE3E022D60E80100E8B612 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C6AE3E082D60E80100E8B612 /* SwiftDataSupabaseTestAI */ = {
+			isa = PBXGroup;
+			children = (
+				C6AE3E072D60E80100E8B612 /* SwiftDataSupabaseTestAIApp.swift */,
+				C6AE3E102D60EC9000E8B612 /* Supabase */,
+				C6AE3E0D2D60E81500E8B612 /* Model */,
+				C6AE3E262D60EEFC00E8B612 /* Views */,
+				C6AE3E3A2D60F64700E8B612 /* Sheets */,
+				C6AE3E3C2D60F64700E8B612 /* Helpers */,
+				C6AE3E042D60E80100E8B612 /* Assets.xcassets */,
+				C6AE3E062D60E80100E8B612 /* SwiftDataSupabaseTestAI.entitlements */,
+				C6AE3E032D60E80100E8B612 /* Preview Content */,
+			);
+			path = SwiftDataSupabaseTestAI;
+			sourceTree = "<group>";
+		};
+		C6AE3E0D2D60E81500E8B612 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6AE3E0E2D60E82000E8B612 /* Author.swift */,
+				C6AE3E322D60F58500E8B612 /* Book.swift */,
+				C6AE3E362D60F58E00E8B612 /* Category.swift */,
+				C6AE3E342D60F58900E8B612 /* Country.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6AE3E102D60EC9000E8B612 /* Supabase */ = {
+			isa = PBXGroup;
+			children = (
+				C6AE3E112D60EC9D00E8B612 /* Secrets.swift */,
+				C6AE3E2E2D60F08600E8B612 /* AuthVM.swift */,
+				C6AE3E2C2D60EF6B00E8B612 /* SupabaseSyncManager.swift */,
+			);
+			path = Supabase;
+			sourceTree = "<group>";
+		};
+		C6AE3E1E2D60ED1400E8B612 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6AE3E262D60EEFC00E8B612 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C6AE3E302D60F0E100E8B612 /* AuthView.swift */,
+				C6AE3E212D60EEFC00E8B612 /* ContentView.swift */,
+				C6AE3E222D60EEFC00E8B612 /* AutorenView.swift */,
+				C6AE3E232D60EEFC00E8B612 /* BuecherView.swift */,
+				C6AE3E242D60EEFC00E8B612 /* AutorDetails.swift */,
+				C6AE3E252D60EEFC00E8B612 /* BuchDetails.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C6AE3E3A2D60F64700E8B612 /* Sheets */ = {
+			isa = PBXGroup;
+			children = (
+				C6AE3E382D60F64700E8B612 /* NewAutorSheet.swift */,
+				C6AE3E392D60F64700E8B612 /* NewBuchSheet.swift */,
+			);
+			path = Sheets;
+			sourceTree = "<group>";
+		};
+		C6AE3E3C2D60F64700E8B612 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C6AE3E3B2D60F64700E8B612 /* NewSheet.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,11 +189,14 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				C6AE3DF22D60E6D300E8B612 /* SwiftDataSupabaseTestAI */,
-			);
 			name = SwiftDataSupabaseTestAI;
 			packageProductDependencies = (
+				C6AE3E142D60ECE000E8B612 /* Auth */,
+				C6AE3E162D60ECE000E8B612 /* Functions */,
+				C6AE3E182D60ECE000E8B612 /* PostgREST */,
+				C6AE3E1A2D60ECE000E8B612 /* Realtime */,
+				C6AE3E1C2D60ECE000E8B612 /* Storage */,
+				C6AE3E1F2D60ED1400E8B612 /* Supabase */,
 			);
 			productName = SwiftDataSupabaseTestAI;
 			productReference = C6AE3DF02D60E6D300E8B612 /* SwiftDataSupabaseTestAI.app */;
@@ -94,6 +226,9 @@
 			);
 			mainGroup = C6AE3DE72D60E6D300E8B612;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C6AE3E132D60ECE000E8B612 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C6AE3DF12D60E6D300E8B612 /* Products */;
 			projectDirPath = "";
@@ -109,6 +244,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6AE3E092D60E80100E8B612 /* Preview Assets.xcassets in Resources */,
+				C6AE3E0A2D60E80100E8B612 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +256,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6AE3E2F2D60F08600E8B612 /* AuthVM.swift in Sources */,
+				C6AE3E3D2D60F64700E8B612 /* NewAutorSheet.swift in Sources */,
+				C6AE3E3E2D60F64700E8B612 /* NewBuchSheet.swift in Sources */,
+				C6AE3E3F2D60F64700E8B612 /* NewSheet.swift in Sources */,
+				C6AE3E0F2D60E82000E8B612 /* Author.swift in Sources */,
+				C6AE3E272D60EEFC00E8B612 /* BuecherView.swift in Sources */,
+				C6AE3E282D60EEFC00E8B612 /* AutorDetails.swift in Sources */,
+				C6AE3E352D60F58900E8B612 /* Country.swift in Sources */,
+				C6AE3E2D2D60EF6B00E8B612 /* SupabaseSyncManager.swift in Sources */,
+				C6AE3E292D60EEFC00E8B612 /* BuchDetails.swift in Sources */,
+				C6AE3E2A2D60EEFC00E8B612 /* AutorenView.swift in Sources */,
+				C6AE3E2B2D60EEFC00E8B612 /* ContentView.swift in Sources */,
+				C6AE3E332D60F58500E8B612 /* Book.swift in Sources */,
+				C6AE3E122D60EC9D00E8B612 /* Secrets.swift in Sources */,
+				C6AE3E312D60F0E100E8B612 /* AuthView.swift in Sources */,
+				C6AE3E0C2D60E80100E8B612 /* SwiftDataSupabaseTestAIApp.swift in Sources */,
+				C6AE3E372D60F58E00E8B612 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +473,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C6AE3E132D60ECE000E8B612 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C6AE3E142D60ECE000E8B612 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6AE3E132D60ECE000E8B612 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		C6AE3E162D60ECE000E8B612 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6AE3E132D60ECE000E8B612 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		C6AE3E182D60ECE000E8B612 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6AE3E132D60ECE000E8B612 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		C6AE3E1A2D60ECE000E8B612 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6AE3E132D60ECE000E8B612 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		C6AE3E1C2D60ECE000E8B612 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6AE3E132D60ECE000E8B612 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		C6AE3E1F2D60ED1400E8B612 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C6AE3E132D60ECE000E8B612 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C6AE3DE82D60E6D300E8B612 /* Project object */;
 }
